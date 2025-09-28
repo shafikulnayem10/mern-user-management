@@ -4,7 +4,7 @@ import axios from "axios";
 const API = "/users";
 
 
-export default function UserApp() {
+export default function Userapp() {
   const [users, setUsers] = useState([]);
   const [form, setForm] = useState({ name: "", email: "", age: "" });
   const [editingId, setEditingId] = useState(null);
@@ -46,7 +46,7 @@ export default function UserApp() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>User Management (MongoDB Driver)</h1>
+      <h1>User Management </h1>
       <form onSubmit={handleSubmit}>
         <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
         <input name="email" placeholder="Email" value={form.email} onChange={handleChange} />
